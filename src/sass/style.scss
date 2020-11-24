@@ -1,0 +1,40 @@
+/*------------[HEADER STYLE]-------------*/
+$colorbd:#cc584b;
+$buttonactive:green;
+$buttonbk:grey;
+$text:center;
+$decor:none;
+$size:25px;
+
+
+#head {
+    text-align:$text;
+    a {
+        display:inline-block;
+        text-decoration:$decor;
+        background-color:$buttonbk;
+        padding: 14px 25px;
+        text-align:$text;
+        font-size: $size;
+        color:white;
+        &:hover, &:active{ //& hace referencia al (a) principal
+            background-color:$buttonactive;
+        }
+    }
+  }
+
+/*------------[BODY STYLE]-------------*/
+$textcontent:center;
+$bodytext:center;
+
+div.dbcontent{
+    text-align: $textcontent;
+    position: sticky;
+}
+
+body{
+    background-color:$colorbd;
+    h1,h2{
+        text-align: $bodytext;
+    }
+}

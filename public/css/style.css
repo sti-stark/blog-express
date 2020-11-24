@@ -1,2 +1,31 @@
+/*------------[HEADER STYLE]-------------*/
+#head {
+  text-align: center;
+}
+#head a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: grey;
+  padding: 14px 25px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+#head a:hover, #head a:active {
+  background-color: green;
+}
 
+/*------------[BODY STYLE]-------------*/
+div.dbcontent {
+  text-align: center;
+  position: sticky;
+}
 
+body {
+  background-color: #cc584b;
+}
+body h1, body h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
