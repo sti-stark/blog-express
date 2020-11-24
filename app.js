@@ -8,7 +8,7 @@ const blogRouter = require('./routers/blog');
 const Blog = require('./models/blog');
 
 /* -------------- [PORT] -------------- */
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 /* ---------- [APP LISTEN] ------------ */
 app.listen(port, () => {
@@ -42,7 +42,7 @@ app.get('/', async (req, res) => {
 });
 
 app.get('/new',(req,res)=>{
-    res.render('quiz',{title:'Form'})
+    res.render('new',{title:'Form'})
 })
 
 /**----------- [API ROUTING] ----------- */
