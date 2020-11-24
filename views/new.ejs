@@ -1,0 +1,15 @@
+<%- include('/partials/header.ejs') %>
+<main>
+    <div>
+        <h3>Add a new question here</h3>
+        <form action="/api/blog" method="POST">
+            <label for="title">pregunta:</label>
+            <textarea id="title" name="title" required></textarea>
+            <label for="text">b:</label>
+            <textarea id="text" name="text" required></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</main>
+
+<%- include('/partials/footer.ejs') %>

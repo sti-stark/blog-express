@@ -1,0 +1,17 @@
+<%- include('/partials/header.ejs') %>
+<main>
+    <h2>This is the database's content</h2>
+    <div>
+        <% if (blog.length > 0) { %>
+        <% blog.forEach(test => { %>
+        <b><%= blog.title %></b>
+        <ol>
+            <li><i><%= blog.text %></i></li>
+        </ol>
+        <% }) %>
+        <% } else { %>
+        <p>No se han encontrado preguntas</p>
+        <% } %>
+    </div>
+</main>
+<%- include('/partials/footer.ejs') %>
