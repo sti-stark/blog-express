@@ -34,10 +34,10 @@ app.use((req, res, next) => {
 /*------------- [RUTAS WEB] ------------ */
 app.get('/', async (req, res) => {
     try {
-        const blog = await Blog.find({})
-        res.render('index.ejs', { title: 'Blog', blog: blog })
+        const blogs = await Blog.find({})
+        res.render('index.ejs', { title: 'Blog', blogs: blogs })
     } catch (error) {
-        res.render('index.ejs', { title: 'Blog', blog: [] })
+        res.render('index.ejs', { title: 'Blog', blogs: [] })
     }
 });
 
