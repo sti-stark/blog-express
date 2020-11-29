@@ -15,10 +15,16 @@
   background-color: green;
 }
 
-/*------------[BODY STYLE]-------------*/
+/*------------[BODY STYLE INDEX]-------------*/
 div.dbcontent {
-  text-align: center;
+  border: 15px solid green;
+  text-align: left;
+  margin: auto;
   position: sticky;
+  width: 500px;
+}
+div.dbcontent h2 {
+  text-align: center;
 }
 
 body {
@@ -26,6 +32,14 @@ body {
 }
 body h1, body h2 {
   text-align: center;
+}
+
+/*-------------[STYLE PAGE NEW]-----------------*/
+div.centerform {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

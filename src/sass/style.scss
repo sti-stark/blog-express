@@ -24,12 +24,19 @@ $size:25px;
   }
 
 /*------------[BODY STYLE INDEX]-------------*/
-$textcontent:center;
+$textcontent:left;
+$titleposition:center;
 $bodytext:center;
 
 div.dbcontent{
+    border: 15px solid green;
     text-align: $textcontent;
+    margin:auto;
     position: sticky;
+    width: 500px;
+    h2{
+        text-align: $titleposition;
+    }
 }
 
 body{
@@ -37,4 +44,13 @@ body{
     h1,h2{
         text-align: $bodytext;
     }
+}
+
+/*-------------[STYLE PAGE NEW]-----------------*/
+
+div.centerform{
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  margin:auto;
 }

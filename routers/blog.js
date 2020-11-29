@@ -7,7 +7,7 @@ router.post('/blog', async (req, res) => {
 
     try {
         await blog.save()
-        res.redirect('/')
+        res.redirect('/')//redirige a la primera página despues de introducir la información en el fomr
     } catch (e) {
         res.status(400).send(e)
     }

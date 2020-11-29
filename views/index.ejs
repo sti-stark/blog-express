@@ -1,18 +1,16 @@
 <%- include('./partials/header.ejs') %>
 <main>
     <h1>BLOG</h1>
-    <h2>This is the database's content</h2>
+    <% if (blogs.length > 0) { %>
+    <% blogs.forEach(blog => { %>
     <div class="dbcontent">
-        <% if (blogs.length > 0) { %>
-        <% blogs.forEach(blog => { %>
-        <b><%= blog.title %></b>
-        <ol>
-            <li><p><%= blog.text %></p></li>
-        </ol>
-        <% }) %>
-        <% } else { %>
-        <p>No hay ningun post</p>
-        <% } %>
-    </div>
+        <h2><%= blog.title %></h2>
+        <p><%= blog.text %></p>
+    </div><br>
+    <% }) %>
+    <% } else { %>
+    <p>No hay ningun post</p>
+    <% } %>
+
 </main>
 <%- include('./partials/footer.ejs') %>
